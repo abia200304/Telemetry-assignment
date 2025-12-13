@@ -1,4 +1,4 @@
-# Level 1 Telemetry Firmware Task
+# Level 1 and 2 Telemetry Firmware Task
 
 ## Overview
 This project implements a Level-1 telemetry pipeline using simulated sensor data.

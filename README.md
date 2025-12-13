@@ -44,10 +44,8 @@ $L2,timestamp_ms,roll,pitch,heading,alt,temp*CHK
 ```cmd
 gcc -O2 telemetry_tx.c ahrs.c -o telemetry_tx -lm
 
-### Run transmitter
-```cmd
-telemetry_tx.exe --stdout
-### Visualization
-telemetry_tx.exe --stdout | py plot_live.py
+
+
+
 
 

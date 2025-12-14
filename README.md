@@ -16,6 +16,8 @@ receive, parse, log, and visualize the data.
 ### Frame Format
 
 ---
+$L2,timestamp_ms,roll,pitch,heading,alt,temp*CHK
+---
 
 ## Level 2 – AHRS
 - Complementary filter AHRS

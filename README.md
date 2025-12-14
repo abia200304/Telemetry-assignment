@@ -14,18 +14,16 @@ receive, parse, log, and visualize the data.
 - Python receiver logs data to CSV
 
 ### Frame Format
-$L1,timestamp_ms,ax,ay,az,gx,gy,gz,alt,temp*CHK
 
 ---
 
 ## Level 2 – AHRS
 - Complementary filter AHRS
 - Computes roll, pitch, and heading
-- Modular AHRS implementation (`ahrs.c / ahrs.h`)
+- Modular AHRS implementation (ahrs.c / ahrs.h)
 - Level-2 telemetry protocol
 
 ### Level 2 Frame Format
-$L2,timestamp_ms,roll,pitch,heading,alt,temp*CHK
 
 ---
 
@@ -41,11 +39,9 @@ $L2,timestamp_ms,roll,pitch,heading,alt,temp*CHK
 ## Build & Run (Windows)
 
 ### Compile
-```cmd
 gcc -O2 telemetry_tx.c ahrs.c -o telemetry_tx -lm
+### Run transmitter
+telemetry_tx.exe --stdout
 
-
-
-
-
-
+### Run live visualization
+telemetry_tx.exe --stdout | py plot_live.py

@@ -85,4 +85,5 @@ telemetry_tx.exe --stdout | py plot_live.py
 
 ## AI Usage
 ChatGPT was used for guidance on AHRS theory, debugging, refactoring,
-and documentation structure. All code was manually tested and validated.
+and documentation structure. 
+
